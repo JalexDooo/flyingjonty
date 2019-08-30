@@ -1,0 +1,15 @@
+{% extends 'flyingzone/base.html' %}
+
+{% block main %}
+<div class="ui cards">
+    {% for artical in artical_list %}
+    <a class="card" href="{{ artical.get_absolute_url }}">
+        <div class="content">
+            <div class="header">{{ artical.title }}</div>
+            <div class="meta">{{ artical.create_time }}</div>
+            <div class="description">{{artical.excerpt}}</div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+{% endblock main %}

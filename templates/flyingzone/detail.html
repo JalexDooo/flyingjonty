@@ -1,0 +1,10 @@
+{% extends 'flyingzone/base.html' %}
+
+{% block main %}
+<div class="ui text segment">
+    <h2 class="ui center aligned header">{{ artical.title }}</h2>
+    <div class="ui segment">{{ artical.content|safe }}</div>
+
+
+</div>
+{% endblock main %}
